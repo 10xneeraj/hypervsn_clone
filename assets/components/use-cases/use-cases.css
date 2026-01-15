@@ -1,0 +1,232 @@
+/* --- USE CASES MARQUEE SECTION --- */
+.use-cases-section {
+    padding: 100px 0;
+    /* Light Theme Background matching Hypervsn.com */
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f7f9 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.use-cases-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-label-center {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* Changed to purple/indigo for contrast */
+    color: #6f52ed; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.section-title-center {
+    font-size: 3.5rem;
+    color: #212224; /* Strong Dark Color */
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.section-desc-center {
+    font-size: 1.1rem;
+    color: #555; /* Medium Gray */
+    line-height: 1.6;
+}
+
+/* Slider Structure */
+.slider-viewport {
+    width: 100%;
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+    padding: 40px 0 80px; /* More vertical breathing room */
+    /* Fading edges - Updated for white background */
+    mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+.slider-track {
+    display: flex;
+    gap: 30px; 
+    width: max-content;
+    will-change: transform;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    align-items: center; /* Center items vertically */
+}
+
+/* Remove CSS Animation */
+/* .marquee-track:hover... removed */
+
+/* Card Styles - Tablet Frame Effect */
+.use-case-card {
+    width: 500px; /* Approximate tablet width */
+    flex-shrink: 0;
+    transition: all 0.6s ease;
+    opacity: 0.5; /* Inactive fade */
+    transform: scale(0.85); /* Inactive shrink */
+    position: relative;
+}
+
+.use-case-card .video-wrapper {
+    width: 100%;
+    /* 4:3 Aspect Ratio approx for tablet */
+    height: 360px; 
+    position: relative;
+    border-radius: 24px; /* Significant rounding */
+    overflow: hidden;
+    background: #000;
+    border: 8px solid #1a1a1a; /* Frame border */
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5); /* Deep shadow */
+}
+
+.use-case-card.active {
+    opacity: 1;
+    transform: scale(1); /* Full size */
+    z-index: 10;
+}
+
+.use-case-card.active .video-wrapper {
+    border-color: #333; /* Lighter frame when active */
+    box-shadow: 0 30px 60px rgba(0,0,0,0.7);
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1; /* Always visible but dimmed by card opacity */
+    transition: transform 0.6s;
+}
+
+/* Play Button - Centered Round */
+.play-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 64px;
+    height: 64px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1; /* Visible by default on active */
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+}
+
+.play-indicator::after {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 18px solid #fff;
+    margin-left: 5px;
+}
+
+.use-case-card.active .play-indicator {
+    opacity: 0; /* Hide when playing */
+}
+
+.use-case-card:hover .play-indicator {
+    opacity: 1;
+    background: rgba(255,255,255,0.25);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+
+.case-info {
+    padding: 15px 0;
+}
+
+.case-category {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.case-info h4 {
+    font-size: 18px;
+    color: #000; /* Black Title */
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Feedback Bubbles Re-positioning */
+.feedback-bubble {
+    position: absolute;
+    z-index: 20;
+    background: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-width: 300px;
+    animation: floatBubble 6s ease-in-out infinite;
+}
+
+.feedback-bubble span {
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.bubble-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.feedback-bubble.yellow {
+    background-color: #ffd600;
+    top: 20%;
+    left: 10%;
+    transform: rotate(-5deg);
+}
+
+.feedback-bubble.purple {
+    background-color: #c084fc;
+    top: 60%;
+    right: 15%;
+    transform: rotate(3deg);
+    animation-delay: 2s;
+}
+
+@keyframes floatBubble {
+    0%, 100% { transform: translateY(0) rotate(-5deg); }
+    50% { transform: translateY(-15px) rotate(-3deg); }
+}
+
+@media (max-width: 768px) {
+    .section-title-center {
+        font-size: 2.5rem;
+    }
+    .use-case-card {
+        width: 300px;
+    }
+    .video-wrapper {
+        height: 170px;
+    }
+    .feedback-bubble {
+        display: none;
+    }
+}

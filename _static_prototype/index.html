@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<!--
+    File: index.html
+    Purpose: Main entry point for the Hypervsn Clone project.
+    Structure:
+        - Header (Navigation & Mega Menus)
+        - Hero Section
+        - Trusted By Section
+        - Business Values (ROI)
+        - Solutions Overview
+        - Technology (How It Works)
+        - Industries (Use Cases)
+        - CTA Section
+        - Footer
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HYPERVSN - 3D Holographic Displays Clone</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main Stylesheet (Global) -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="solutions.css" />
+    
+    <!-- Component Styles -->
+    <link rel="stylesheet" href="assets/components/header/header.css">
+    <link rel="stylesheet" href="assets/components/hero/hero.css">
+    <link rel="stylesheet" href="assets/components/roi/roi.css">
+    <link rel="stylesheet" href="assets/components/use-cases/use-cases.css">
+    <link rel="stylesheet" href="assets/components/contact/contact.css">
+  </head>
+  <body>
+    <header id="site-header" class="header-main">
+      <!-- Tier 1: Top Bar (Logo and Become a Partner) -->
+      <div class="header-main_top">
+        <div class="container main-container">
+          <a href="index.html" class="header-main_logo">
+            <img
+              src="https://hypervsn.com/hvblog/wp-content/themes/hypervsn/dist/img/icons/logo-white.svg"
+              alt="HYPERVSN"
+            />
+          </a>
+          <a href="#" class="btn-def partner-btn">
+            <svg
+              class="icon-user"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            Become a Partner
+          </a>
+        </div>
+      </div>
+
+      <!-- Tier 2: Main Navigation Bar -->
+      <nav id="site-nav" class="header-main_nav">
+        <div class="container nav-container">
+          <ul class="main-nav_list">
+            <li class="main-nav_item has-mega" data-target="solutions-mega">
+              <a href="solutions.html" class="main-nav_item-button"
+                >Solutions <i class="arrow-down"></i
+              ></a>
+            </li>
+            <li class="main-nav_item has-mega" data-target="industries-mega">
+              <span class="main-nav_item-button"
+                >Industries <i class="arrow-down"></i
+              ></span>
+            </li>
+            <li class="main-nav_item">
+              <a href="#" class="navigation_link">Holograms for Events</a>
+            </li>
+            <li class="main-nav_item">
+              <a href="#" class="navigation_link">Holographic Truck</a>
+            </li>
+            <li class="main-nav_item">
+              <a href="#" class="navigation_link">OOH</a>
+            </li>
+
+            <li class="main-nav_item has-mega" data-target="tech-mega">
+              <span class="main-nav_item-button"
+                >Technology <i class="arrow-down"></i
+              ></span>
+            </li>
+            <li class="main-nav_item has-mega" data-target="company-mega">
+              <span class="main-nav_item-button"
+                >Company <i class="arrow-down"></i
+              ></span>
+            </li>
+            <li class="main-nav_item has-mega" data-target="partnership-mega">
+              <span class="main-nav_item-button"
+                >Partnership <i class="arrow-down"></i
+              ></span>
+            </li>
+          </ul>
+
+          <div class="main-nav_actions">
+            <a
+              href="#"
+              class="btn-pr demo-btn"
+              data-modal-btn="Demo Request form"
+              >Demo Request</a
+            >
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- --- MEGA MENUS --- -->
+
+      <!-- Solutions Mega Menu -->
+      <div class="mega-menu" id="solutions-mega">
+        <div class="container mega-grid-layout">
+          <div class="mega-col wide-col">
+            <div class="mega-rich-grid">
+              <!-- Column 1 -->
+              <div class="mega-rich-col">
+                <a href="#" class="mega-rich-item active">
+                  <div class="rich-icon">
+                    <img
+                      src="assets/solutions/icon-digital-avatar.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Digital Avatar</h4>
+                    <p>Digital Avatar solution for any industry</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img
+                      src="assets/solutions/icon-holographic-human.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Holographic Human</h4>
+                    <p>Life-size 3D holographic human</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-lift-learn.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Lift & Learn</h4>
+                    <p>Interactive product discoveries</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-modeller.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>SmartV 3D Modeller</h4>
+                    <p>Interactive 3D holographic models</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-smartv-wall.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>HYPERVSN SmartV Wall</h4>
+                    <p>Scalable 3D Holographic display</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Column 2 -->
+              <div class="mega-rich-col">
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-prime-edge.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>HYPERVSN Prime & Edge</h4>
+                    <p>Our new all-in-one solution</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img
+                      src="assets/solutions/icon-live-streaming.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="rich-info">
+                    <h4>HYPERVSN Live Streaming</h4>
+                    <p>Broadcast Live Events in Real-time</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-catalogue.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>HYPERVSN 3D Catalogue</h4>
+                    <p>Controlled 3D products catalogue</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-slots.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>HYPERVSN Slots</h4>
+                    <p>3D Holographic Slot Machine</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-smartv-solo.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>HYPERVSN SmartV Solo</h4>
+                    <p>Interactive Holographic Display</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mega-featured">
+            <div
+              class="featured-card"
+              style="
+                background-image: url('assets/solutions/digital-avatar.jpg');
+                min-height: 380px;
+              "
+            >
+              <div class="featured-content">
+                <div class="featured-text-overlay">
+                  <h3>SmartV Digital Avatar</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industries Mega Menu -->
+      <div class="mega-menu" id="industries-mega">
+        <div class="container mega-grid-layout">
+          <div class="mega-col wide-col">
+            <div class="mega-rich-grid">
+              <div class="mega-rich-col">
+                <h5 class="mega-cat-title mb-3">By Sector</h5>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-catalogue.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Retail</h4>
+                    <p>Engage customers with 3D product displays</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-lift-learn.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Education</h4>
+                    <p>Interactive learning experiences</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img
+                      src="assets/solutions/icon-live-streaming.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Events & Entertainment</h4>
+                    <p>Show-stopping holographic visuals</p>
+                  </div>
+                </a>
+              </div>
+              <div class="mega-rich-col">
+                <h5 class="mega-cat-title mb-3">&nbsp;</h5>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-smartv-wall.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Experiential Marketing</h4>
+                    <p>Unforgettable brand activations</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img
+                      src="assets/solutions/icon-holographic-human.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Healthcare</h4>
+                    <p>Medical visualization & detailed models</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mega-featured">
+            <div
+              class="featured-card"
+              style="
+                background-image: url('assets/solutions/prime-edge.jpg');
+                min-height: 380px;
+              "
+            >
+              <div class="featured-content">
+                <div class="featured-text-overlay">
+                  <h3>Industry Solutions</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technology Mega Menu -->
+      <div class="mega-menu" id="tech-mega">
+        <div class="container mega-grid-layout">
+          <div class="mega-col wide-col">
+            <div class="mega-rich-grid">
+              <div class="mega-rich-col">
+                <h5 class="mega-cat-title mb-3">Products</h5>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-prime-edge.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>HYPERVSN Prime & Edge</h4>
+                    <p>Our new all-in-one solution</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-smartv-wall.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>HYPERVSN SmartV Wall</h4>
+                    <p>Scalable 3D Holographic display</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-smartv-solo.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>HYPERVSN SmartV Solo</h4>
+                    <p>Interactive Holographic Display</p>
+                  </div>
+                </a>
+              </div>
+              <div class="mega-rich-col">
+                <h5 class="mega-cat-title mb-3">Creation</h5>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/icons/3d-content-icon.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>3D Content</h4>
+                    <p>Creating holographic assets</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/icons/smartv-solo-icon.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Accessories</h4>
+                    <p>Protective covers & stands</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mega-featured">
+            <div
+              class="featured-card"
+              style="
+                background-image: url('assets/solutions/modeller.jpg');
+                min-height: 380px;
+              "
+            >
+              <div class="featured-content">
+                <div class="featured-text-overlay">
+                  <h3>Future Tech</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Company Mega Menu -->
+      <div class="mega-menu" id="company-mega">
+        <div class="container mega-grid-layout">
+          <div class="mega-col wide-col">
+            <div class="mega-rich-grid">
+              <div class="mega-rich-col">
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img
+                      src="assets/icons/categories-white.png"
+                      alt=""
+                      style="filter: invert(1)"
+                    />
+                  </div>
+                  <!-- Reusing generic -->
+                  <div class="rich-info">
+                    <h4>About Us</h4>
+                    <p>Our story & mission</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img
+                      src="assets/icons/use-cases-white.png"
+                      alt=""
+                      style="filter: invert(1)"
+                    />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Events</h4>
+                    <p>Where to find us</p>
+                  </div>
+                </a>
+              </div>
+              <div class="mega-rich-col">
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img
+                      src="assets/solutions/icon-live-streaming.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Press & Media</h4>
+                    <p>Latest news releases</p>
+                  </div>
+                </a>
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-catalogue.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Blog</h4>
+                    <p>Insights & updates</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mega-featured">
+            <div
+              class="featured-card"
+              style="
+                background-image: url('assets/solutions/smartv-wall.jpg');
+                min-height: 380px;
+              "
+            >
+              <div class="featured-content">
+                <div class="featured-text-overlay">
+                  <h3>The Company</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partnership Mega Menu -->
+      <div class="mega-menu" id="partnership-mega">
+        <div class="container mega-grid-layout">
+          <div class="mega-col wide-col">
+            <div class="mega-rich-grid">
+              <div class="mega-rich-col">
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-modeller.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Become a Partner</h4>
+                    <p>Join the revolution</p>
+                  </div>
+                </a>
+              </div>
+              <div class="mega-rich-col">
+                <a href="#" class="mega-rich-item">
+                  <div class="rich-icon">
+                    <img src="assets/solutions/icon-catalogue.png" alt="" />
+                  </div>
+                  <div class="rich-info">
+                    <h4>Find a Reseller</h4>
+                    <p>Locate a partner near you</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Featured Card -->
+          <div class="mega-featured">
+            <div
+              class="featured-card"
+              style="
+                background-image: url('assets/solutions/lift-learn.jpg');
+                min-height: 380px;
+              "
+            >
+              <div class="featured-content">
+                <div class="featured-text-overlay">
+                  <h3>Partnership</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="hero-bg-video">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="assets/hero/hero-poster.jpg"
+            id="heroVideo"
+          >
+            <source src="assets/hero/hero-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-overlay"></div>
+        </div>
+      </section>
+
+      <!-- TRUSTED BY SECTION -->
+      <section class="trusted-section">
+        <div class="container">
+          <p class="trusted-title">Trusted by Global Brands</p>
+          <div class="trusted-grid">
+            <img
+              src="assets/logos/adidas.png"
+              alt="Adidas"
+              class="trusted-logo-img"
+            />
+            <img
+              src="assets/logos/base.png"
+              alt="Base"
+              class="trusted-logo-img"
+            />
+            <img
+              src="assets/logos/douglas.png"
+              alt="Douglas"
+              class="trusted-logo-img"
+            />
+            <img
+              src="assets/logos/lacoste.png"
+              alt="Lacoste"
+              class="trusted-logo-img"
+            />
+            <img
+              src="assets/logos/puma.png"
+              alt="Puma"
+              class="trusted-logo-img"
+            />
+            <img
+              src="assets/logos/louis-vuitton.png"
+              alt="Louis Vuitton"
+              class="trusted-logo-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- BUSINESS VALUES SECTION -->
+
+      <section class="roi-section">
+        <div class="container roi-container">
+          <!-- Left Content -->
+          <div class="roi-left">
+            <span class="label">BUSINESS VALUE</span>
+            <h2>Deliver tangible ROI<br />with <span>HYPERVSN</span></h2>
+            <p class="description">
+              *Stats are based on HYPERVSN case studies with 3rd party data
+              providers. Want to see how HYPERVSN can impact your business
+              objectives?
+            </p>
+          </div>
+
+          <!-- Right Content -->
+          <div class="roi-right">
+            <div class="roi-card">
+              <div class="roi-header">
+                <span class="value" data-target="40" data-suffix="%">0%</span>
+              </div>
+              <div class="progress">
+                <span style="width: 0%" data-width="40%"></span>
+              </div>
+              <h4>Drive Brand Awareness</h4>
+              <p>
+                40% longer viewing and engagement time compared with standard 2D
+                digital signage.
+              </p>
+            </div>
+
+            <div class="roi-card">
+              <div class="roi-header">
+                <span class="value" data-target="88" data-suffix="%">0%</span>
+              </div>
+              <div class="progress">
+                <span style="width: 0%" data-width="88%"></span>
+              </div>
+              <h4>Boost emotional response</h4>
+              <p>
+                88% percent of people showed signs of happiness interacting with
+                HYPERVSN.
+              </p>
+            </div>
+
+            <div class="roi-card">
+              <div class="roi-header">
+                <span class="value" data-target="2" data-suffix="x">0x</span>
+              </div>
+              <div class="progress">
+                <span style="width: 0%" data-width="100%"></span>
+              </div>
+              <h4>Generate Leads</h4>
+              <p>2x higher chance of a holographic image being seen.</p>
+            </div>
+
+            <div class="roi-card">
+              <div class="roi-header">
+                <span class="value" data-target="40" data-suffix="%">0%</span>
+              </div>
+              <div class="progress">
+                <span style="width: 0%" data-width="40%"></span>
+              </div>
+              <h4>Increase Sales</h4>
+              <p>
+                HYPERVSN solutions generate up to 40% increase of promoted
+                product.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOLUTIONS OVERVIEW SECTION -->
+      <section class="section solutions-grid-section fade-up">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">SOLUTIONS OVERVIEW</span>
+            <h2 class="section-title">3D Holographic displays <br> for <span class="typing-effect"></span><span class="typing-cursor">|</span></h2>
+          </div>
+
+          <div class="solutions-grid-home">
+            <!-- Left Column -->
+            <div class="sol-grid-column">
+                <!-- Digital Avatar (Standard Height) -->
+                <a href="#" class="sol-grid-card standard fade-up">
+                  <div class="new-tag">New</div>
+                  <div class="sol-card-image" style="background-image: url('assets/products/digital-avatar.jpg');"></div>
+                  <div class="sol-card-content">
+                    <h3>Digital Avatar</h3>
+                    <p>Transform customer experience with Digital Avatar and ChatGPT Integration.</p>
+                  </div>
+                </a>
+
+                <!-- Holographic Human (Standard Height) -->
+                <a href="#" class="sol-grid-card standard fade-up">
+                  <div class="sol-card-image" style="background-image: url('assets/products/holographic-human.jpg');"></div>
+                  <div class="sol-card-content">
+                    <h3>Holographic Human</h3>
+                    <p>Connect with your audience on a personal level.</p>
+                  </div>
+                </a>
+
+                 <!-- SmartV Slots (Large Height) -->
+                 <a href="#" class="sol-grid-card large fade-up">
+                    <div class="sol-card-image" style="background-image: url('assets/products/smartv-slots.jpg');"></div>
+                    <div class="sol-card-content">
+                      <h3>SmartV Slots</h3>
+                      <p>Sky-rocket audience engagement with the world’s first holographic slot machine.</p>
+                    </div>
+                  </a>
+            </div>
+
+            <!-- Right Column -->
+            <div class="sol-grid-column">
+                 <!-- SmartV Wall (Large Height) -->
+                 <a href="#" class="sol-grid-card large fade-up">
+                    <div class="sol-card-image" style="background-image: url('assets/products/smartv-wall.jpg')"></div>
+                    <div class="sol-card-content">
+                      <h3>HYPERVSN SmartV Wall</h3>
+                      <p>New large-scale 3D Holographic solution taking 3D Walls to the next level.</p>
+                    </div>
+                  </a>
+
+                <!-- SmartV Solo (Standard Height) -->
+                <a href="#" class="sol-grid-card standard fade-up">
+                  <div class="sol-card-image" style="background-image: url('assets/products/smartv-solo.jpg')"></div>
+                  <div class="sol-card-content">
+                    <h3>SmartV Solo</h3>
+                    <p>Display, create & manage interactive 3D visuals.</p>
+                  </div>
+                </a>
+
+                <!-- SmartV 3D Modeller (Standard Height) -->
+                <a href="#" class="sol-grid-card standard fade-up">
+                  <div class="sol-card-image" style="background-image: url('assets/products/modeller.jpg')"></div>
+                  <div class="sol-card-content">
+                    <h3>SmartV 3D Modeller</h3>
+                    <p>Edutain your customers.</p>
+                  </div>
+                </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNOLOGY SECTION -->
+      <!-- TECHNOLOGY SECTION (Refined to match live site) -->
+      <section id="technology" class="tech-section fade-up">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-label">HOW IT WORKS</span>
+             <h2 class="section-title">Working with HYPERVSN <br> is <span class="text-gradient" >simple</span></h2>
+          </div>
+          
+          <div class="tech-pillars">
+            <!-- Pillar 1: Display -->
+            <div class="tech-pillar-card">
+              <div class="pillar-icon">
+                 <img src="assets/icons/icon-display.svg" alt="Holographic Display" onerror="this.src='assets/solutions/icon-smartv-wall.png'">
+              </div>
+              <h3>Holographic Display</h3>
+              <p>High-definition, energy-efficient LED-based devices that produce stunning 3D holographic visuals floating in mid-air.</p>
+              <a href="#" class="btn-link">Learn More &rarr;</a>
+            </div>
+
+            <!-- Pillar 2: Software -->
+            <div class="tech-pillar-card">
+              <div class="pillar-icon">
+                 <img src="assets/icons/icon-software.svg" alt="Software Suite" onerror="this.src='assets/solutions/icon-modeller.png'">
+              </div>
+              <h3>HYPERVSN Software Suite</h3>
+              <p>A comprehensive ecosystem to manage devices, upload content, and schedule campaigns remotely from anywhere.</p>
+              <a href="#" class="btn-link">Learn More &rarr;</a>
+            </div>
+
+            <!-- Pillar 3: Content -->
+            <div class="tech-pillar-card">
+              <div class="pillar-icon">
+                 <img src="assets/icons/icon-content.svg" alt="3D Content" onerror="this.src='assets/icons/3d-content-icon.png'">
+              </div>
+              <h3>3D Content</h3>
+              <p>Create your own 3D visuals with our tools, hire our design lab, or choose from a growing library of ready-made assets.</p>
+              <a href="#" class="btn-link">Learn More &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOOLS SECTION -->
+      <section class="tools-section fade-up">
+        <div class="container">
+          <div class="tools-grid">
+            <!-- 3D Studio Card -->
+            <div class="tool-card">
+              <div class="tool-content-wrapper">
+                <h2>Create 3D content in a few clicks with <span class="highlight-italic">3D Studio</span></h2>
+                <p>Try our web-based tool to transform 2D images & texts into 3D visuals with ease.</p>
+                <a href="#" class="btn btn-primary custom-btn">Try Now</a>
+              </div>
+              <div class="tool-bg-img" style="background-image: url('assets/tools/studio-card.png');"></div>
+            </div>
+
+            <!-- Mockup Creator Card -->
+            <div class="tool-card">
+              <div class="tool-content-wrapper">
+                <h2>Visualise a HYPERVSN application with the <span class="highlight-italic">Mockup Creator Tool</span></h2>
+                <p>Upload your location, choose the set-up of HYPERVSN, add content and see how we can fit your business.</p>
+                <a href="#" class="btn btn-primary custom-btn">Learn More</a>
+              </div>
+              <div class="tool-bg-img" style="background-image: url('assets/tools/mockup-card.png');"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- USE CASES / VIEW IN ACTION SECTION -->
+      <section class="use-cases-section fade-up">
+        <div class="container full-width-container">
+          <!-- Section Header -->
+          <div class="use-cases-header">
+            <span class="section-label-center">HYPERVSN USE CASES</span>
+            <h2 class="section-title-center">View HYPERVSN in Action</h2>
+            <p class="section-desc-center">See how HYPERVSN is changing digital signage worldwide. Any application. Any industry. Any business need.</p>
+          </div>
+
+          <!-- Content Grid -->
+            <!-- Floating Interactive Comments (Overlay) -->
+            <div class="feedback-bubble yellow bubble-1 fade-up">
+                <img src="assets/use-cases/avatar1.png" alt="User" class="bubble-avatar">
+                <span>👍 This is the future of retail displays!</span>
+            </div>
+            
+            <div class="feedback-bubble purple bubble-2 fade-up" style="transition-delay: 0.2s;">
+                <img src="assets/use-cases/avatar2.png" alt="User" class="bubble-avatar">
+                <span>It’s really amazing!</span>
+            </div>
+
+            <!-- Slider Container -->
+            <div class="slider-viewport">
+                <div class="slider-track">
+                    <!-- Card 1 -->
+                    <div class="use-case-card">
+                         <div class="video-wrapper">
+                             <video muted loop playsinline poster="assets/products/digital-avatar.jpg">
+                                 <source src="assets/use-cases/nike-video.mp4" type="video/mp4">
+                             </video>
+                             <div class="play-indicator"></div>
+                         </div>
+                         <div class="case-info">
+                             <span class="case-category">RETAIL</span>
+                             <h4>Nike Instore Activation</h4>
+                         </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="use-case-card">
+                         <div class="video-wrapper">
+                             <video muted loop playsinline poster="assets/products/holographic-human.jpg">
+                                 <source src="assets/hero/hero-video.mp4" type="video/mp4">
+                             </video>
+                             <div class="play-indicator"></div>
+                         </div>
+                         <div class="case-info">
+                             <span class="case-category">EVENTS</span>
+                             <h4>Tech Launch 2025</h4>
+                         </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="use-case-card">
+                         <div class="video-wrapper">
+                             <video muted loop playsinline poster="assets/products/smartv-slots.jpg">
+                                 <source src="assets/use-cases/nike-video.mp4" type="video/mp4">
+                             </video>
+                             <div class="play-indicator"></div>
+                         </div>
+                         <div class="case-info">
+                             <span class="case-category">CASINO</span>
+                             <h4>Interactive Slots</h4>
+                         </div>
+                    </div>
+
+                     <!-- Card 4 -->
+                    <div class="use-case-card">
+                         <div class="video-wrapper">
+                             <video muted loop playsinline poster="assets/products/smartv-wall.jpg">
+                                 <source src="assets/hero/hero-video.mp4" type="video/mp4">
+                             </video>
+                             <div class="play-indicator"></div>
+                         </div>
+                         <div class="case-info">
+                             <span class="case-category">ENTERTAINMENT</span>
+                             <h4>Live Concert Hologram</h4>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+      <!-- PRESS / SPOTLIGHT SECTION -->
+      <section class="press-section fade-up">
+        <div class="container">
+            <div class="press-header">
+                <h4>HYPERVSN Solutions in the <span class="text-gradient">Spotlight</span></h4>
+            </div>
+            <div class="press-grid">
+                <div class="press-item">
+                    <!-- Forbes -->
+                    <img src="assets/logos/adidas.png" alt="Forbes" class="press-logo" style="opacity: 0; position: absolute;"> 
+                    <span class="press-logo-text" style="font-weight: 900; font-size: 24px; display: block; margin-bottom: 20px;">Forbes</span>
+                    <p class="press-quote">"The future of display technology."</p>
+                </div>
+                <div class="press-item">
+                     <!-- USA Today -->
+                     <img src="assets/logos/base.png" alt="USA Today" class="press-logo" style="opacity: 0; position: absolute;">
+                     <span class="press-logo-text" style="font-weight: 900; font-size: 24px; display: block; margin-bottom: 20px;">USA TODAY</span>
+                     <p class="press-quote">"Absolutely stunning 3D visuals."</p>
+                </div>
+                <div class="press-item">
+                     <!-- Daily Mail -->
+                     <img src="assets/logos/puma.png" alt="Daily Mail" class="press-logo" style="opacity: 0; position: absolute;">
+                     <span class="press-logo-text" style="font-weight: 900; font-size: 24px; display: block; margin-bottom: 20px;">Daily Mail</span>
+                     <p class="press-quote">"Taking 3D Walls to the next level."</p>
+                </div>
+                <div class="press-item">
+                     <!-- Linus Tech Tips -->
+                     <img src="assets/logos/lacoste.png" alt="Linus Tech Tips" class="press-logo" style="opacity: 0; position: absolute;">
+                     <span class="press-logo-text" style="font-weight: 900; font-size: 24px; display: block; margin-bottom: 20px;">Linus Tech Tips</span>
+                     <p class="press-quote">"Like nothing you've seen before."</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- CONTACT FORM SECTION -->
+      <section id="contact" class="contact-section fade-up">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-header">
+              <h2 class="section-title">
+                Get in <span class="text-gradient">touch</span>
+              </h2>
+              <p>
+                Fill in the form below and our team will get back to you shortly.
+              </p>
+            </div>
+            <form id="contactForm" class="contact-form">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Surname</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Business Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input type="text" id="company" name="company" />
+                </div>
+                <div class="form-group">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="">Select Country</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="DE">Germany</option>
+                    <option value="FR">France</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-footer">
+                <div class="checkbox-group">
+                  <input type="checkbox" id="privacy" required />
+                  <label for="privacy"
+                    >I agree to the <a href="#">Privacy Policy</a></label
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">
+                  Submit
+                </button>
+              </div>
+              <div id="formMessage" class="form-message"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-grid">
+            <!-- Col 1: Products -->
+            <div class="footer-col">
+              <h4>Products</h4>
+              <ul>
+                <li><a href="#">SmartV Solo</a></li>
+                <li><a href="#">SmartV Wall</a></li>
+                <li><a href="#">SmartV Digital Avatar</a></li>
+                <li><a href="#">SmartV Holographic Human</a></li>
+                <li><a href="#">SmartV Slots</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 2: Solutions -->
+            <div class="footer-col">
+              <h4>Solutions</h4>
+              <ul>
+                <li><a href="#">Retail</a></li>
+                <li><a href="#">Digital Out-of-Home</a></li>
+                <li><a href="#">Events & Entertainment</a></li>
+                <li><a href="#">Hospitality</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Medical</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 3: Industries -->
+            <div class="footer-col">
+              <h4>Industries</h4>
+              <ul>
+                <li><a href="#">Retail</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Automotive</a></li>
+                <li><a href="#">Museums</a></li>
+                <li><a href="#">Medical</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 4: Company & Partnership -->
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+              <h4 style="margin-top: 20px">Partnership</h4>
+              <ul>
+                <li><a href="#">Become a Partner</a></li>
+                <li><a href="#">Find a Partner</a></li>
+                <li><a href="#">Partner Portal</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 6: Information -->
+            <div class="footer-col brand-col">
+              <h4>Contact Us</h4>
+              <address
+                style="
+                  margin-bottom: 15px;
+                  font-style: normal;
+                  color: #aaa;
+                  font-size: 0.9rem;
+                  line-height: 1.6;
+                "
+              >
+                <strong>Registered Office & Showroom:</strong><br />
+                Office A, The Makers Building,<br />
+                Nile Street, London, N1 7RD,<br />
+                United Kingdom
+              </address>
+
+              <div
+                class="contact-details"
+                style="margin-bottom: 20px; font-size: 0.9rem; color: #aaa"
+              >
+                <p style="margin-bottom: 5px">
+                  <strong>Sales Dept:</strong> +44 (0) 208-0685-328 ext. 1<br />
+                  <a href="mailto:info@hypervsn.com" style="color: #fff"
+                    >info@hypervsn.com</a
+                  >
+                </p>
+                <p>
+                  <strong>Support (24/7):</strong> +44 (0) 208-0685-328 ext. 3<br />
+                  <a href="mailto:support@hypervsn.com" style="color: #fff"
+                    >support@hypervsn.com</a
+                  >
+                </p>
+              </div>
+
+              <div class="social-icons" style="margin-bottom: 20px">
+                <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+                <a href="#" class="social-icon" aria-label="Twitter">X</a>
+                <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">IN</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-links">
+            <a href="#">Legal documents</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+          <p>&copy; 2025 HYPERVSN. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions-container">
+      <!-- Bottom Left: Call Back -->
+      <div class="floating-left">
+        <a href="#" class="floating-btn call-btn" aria-label="Call Back">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.53.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A16 16 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .56 3.53 1 1 0 0 1-.24 1.02l-2.2 2.2z"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Bottom Right: WhatsApp & LiveChat -->
+      <div class="floating-right">
+        <a
+          href="#"
+          class="floating-btn fa fa-whatsapp whatsapp-btn"
+          aria-label="WhatsApp"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+            />
+          </svg>
+        </a>
+        <a href="#" class="floating-btn chat-btn" aria-label="Live Chat">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- END FLOATING ACTIONS -->
+
+    <!-- Scripts -->
+    <!-- Component Scripts -->
+    <script src="assets/components/header/header.js"></script>
+    <script src="assets/components/hero/hero.js"></script>
+    <script src="assets/components/use-cases/use-cases.js"></script>
+    <script src="assets/components/roi/roi.js"></script>
+    <script src="assets/components/contact/contact.js"></script>
+    <!-- Main Script -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
