@@ -5,7 +5,6 @@
  * This is the most generic template file in a WordPress theme.
  */
 
-// IDE HELPERS (Delete on Production) - Resolves "Undefined function" errors in VS Code
 if (!function_exists('get_header')) { require_once 'wp-stub.php'; }
 
 get_header(); ?>
